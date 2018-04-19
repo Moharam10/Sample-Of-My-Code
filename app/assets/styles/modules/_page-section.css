@@ -1,0 +1,66 @@
+.page-section{
+  width: 100%;
+  margin:  1rem 0;
+
+  &__home{
+    margin-top: 0;
+  }
+  &__title{
+    width: 300px;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+    margin: 2.5rem auto;
+    white-space: nowrap;
+    color: white;
+  }
+  &__about-me{
+    height: auto;
+
+
+  }
+  &__technical-skills{
+    background: #fff;
+
+  }
+  &__portfolio{
+    position: relative;
+    padding:  100px 0px;
+    margin: 0;
+    padding-bottom: 0;
+    border-color: transparent;
+    border-top: 8px solid $secondryBlue;
+    @mixin clearfix;
+
+    &__title{
+
+        width: 300px;
+        text-align: center;
+        padding: 1.5rem 1.5rem;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+        white-space: nowrap;
+        color: white;
+        width: auto ;
+        background:$secondryBlue;
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%,-50%);
+        width: 60%;
+        border-left: 10px white solid;
+        border-right: 10px white solid;
+        @mixin atMedium{
+          width:30%;
+        }
+
+    }
+    &__subtitle {
+      color: #111;
+      position: fixed;
+      top: 0%;
+      left: 30%;
+      letter-spacing: 2px;
+    } /*End of subtitle*/
+  }/*End of portfolio*/
+}/*End of page section*/

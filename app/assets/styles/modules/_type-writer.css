@@ -1,0 +1,23 @@
+.type-writer{
+  color: #FFF;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0,0,0,.2);
+  padding: 12px 0 ;
+  @mixin atSmall {
+    font-size: 1.875rem;
+  }
+   span {
+    color: white;
+  }
+}
+/* style that vertical typing div */
+.txt-rotate .wrap{
+border-right: 0.08em solid white ;
+font-weight: 450;
+color: white;
+}

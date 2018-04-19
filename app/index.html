@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <title>Portfolio </title>
+    <meta name="keywords" content="My Portfolio, Web developer, Wed Designer, responsive design">
+    <meta name="description" content="Your Web developer, I create Products and companies.">
+    <!-- build:css assets/styles/styles.css -->
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <!-- endbuild -->
+
+    <!-- build:js assets/scripts/Vendor.js -->
+    <script src="temp/scripts/Vendor.js"></script>
+    <!-- endbuild -->
+
+   </head>
+<body>
+  <!--- - - - - - - - - - - -Header -------------------------------------------->
+
+  <header>
+    <div class="top-nav" id="top-nav_1">
+        <a href="#"> <div class="top-nav__logo">  </div>  </a>
+        <div class="top-nav__link dropdown"  >
+          <div id="link-portfolio"  class="dropdown__toggle" >
+             Portfolio
+            <i class=" dropdown__icon fa fa-angle-down"></i>
+          </div>
+          <div class="dropdown__content">
+            <a href="#resto"   class="dropdown__item"> <p> Resto </p> </a>
+            <a href="#fictional-university"  class="dropdown__item"> <p> Fictional University </p> </a>
+            <a href="#pig-game" class="dropdown__item"> <p> Pig Game </p> </a>
+            <a href="#travelco"   class="dropdown__item"> <p> Travelco </p> </a>
+          </div>
+        </div>
+        <a   href="#technical-skills" class="top-nav__link" id="link-technical-skills" > Techinical Skills </a>
+        <a  href="#about" class="top-nav__link" id="link-about"> About  </a>
+        <a  href="#" class="top-nav__link" id="link-home"> Home  </a>
+      <!--  <a class="top-nav__link top-nav__hidden"> Hide </a> -->
+        <div class="top-nav__icon">
+          <div class="top-nav__icon__middle"> </div>
+        </div>
+    </div> <!-- End of nav -->
+  </header>
+
+<!--------------------------------Lead Banner -------------------------------------------->
+  <div  class="large-hero page-section page-section__home"  id="home" data-matching-link="#link-home">
+    <div  class="large-hero__particles" >      <!-- id="particles-js"-->
+    </div>
+    <picture>
+      <source srcset="assets/images/hero--large-1.png 1920w" media="(min-width: 1380px)">
+      <source srcset="assets/images/hero--medium-1.png 1380w" media="(min-width: 990px)">
+      <source srcset="assets/images/hero--small-1.png 990w"  media="(min-width: 640px)">
+      <img srcset="assets/images/hero--smaller-1.png 640w" alt="Hesham Moharam Portfolio" class="large-hero__image">
+    </picture>
+    <div  class="large-hero__text-content">
+      <h1 class="wow bounce  large-hero__title">
+        <span class="moving-border">
+            <span class="moving-border__after"></span>
+             Welcome
+            <span class="moving-border__before"></span>
+        </span>
+      </h1>
+      <h2 class="large-hero__subtitle">
+         <span style="display:inline-block;" class="wow fadeInLeft" data-wow-delay="3.8s" data-wow-duration=".5s">I'm </span>
+        <span style="display:inline-block;" class="wow fadeInRight" data-wow-delay="4.3s" data-wow-duration=".5s">  Hesham Moharam</span>
+      </h2>
+     <p class="large-hero__description type-writer wow bounceInLeft" data-wow-delay="4.8s" data-wow-duration=".6s">
+        <span style="display:inline-block;" >I </span>
+        <span class="txt-rotate" data-period="800" data-delay="4500"
+          data-rotate='[ "am a WEB Developer.", "Create Products and Companies.", "am Innovative." ]'>
+        </span>
+      </p>
+    </div>
+    <span class="scroll-up"> &#171; </span>
+
+  </div>
+<!--------------------------------About Me Section -------------------------------------------->
+  <div id="about" data-matching-link="#link-about" class="page-section page-section__about-me">
+      <div class="row row__equal-height-at-Medium">
+        <div class="row__4 ">
+          <div class="about-me__image__wrapper">
+            <img class="about-me__image" src="assets/images/Etch-transparent.png" alt="my Image">
+            <div class="social">
+             <i class="fa fa-twitter" style="color:white"></i>
+             <i class="fa fa-facebook"></i>
+             <i class="fa fa-github"></i>
+             <i class="fa fa-youtube"></i>
+             <i class="fa fa-instagram"></i>
+            </div>
+         </div>
+         </div>
+        <div class="row__8">
+
+          <div class="about-me__text-content">
+            <h1 class="about-me__title fly-word" >
+              <span>A</span>
+              <span>b</span>
+              <span>o</span>
+              <span>u</span>
+              <span>t</span>
+              <span>&nbsp;</span>
+              <span>M</span>
+              <span>e</span>
+            </h1>
+            <p class="about-me__description">I’m a newly born web developer
+                    who can build great looking
+                    and fully functional websites.
+               <br>  Merely a man full of energy, skills and stories who always follows his passion wherever it may lead.
+               <br> <br>
+                  I’m looking for a job that’s mentally challenging, inside a company that can keep my curiosity on fire.
+
+              <br> Design isn't just a job for me, it's a passion.<br>
+               <a href="about.html" class="btn btn__small btn__story"> View More </a>
+
+            </p>
+          </div>
+        </div> <!-- end of row_8 -->
+      </div> <!--End of row-->
+  </div> <!--end of about me -->
+
+  <!--------------------------------Technical Skills Section -------------------------------------------->
+  <div id="technical-skills" data-matching-link="#link-technical-skills" class="page-section page-section__technical-skills skill">
+
+    <h2 class="skill__subtitle">
+      <div class="animated-parent">
+        <span style="display:inline-block;" class="wow fadeInLeft" data-wow-delay=".8s" data-wow-duration=".5s">My </span>
+        <span style="display:inline-block;" class="wow fadeInDown" data-wow-offset="10" data-wow-delay="1.5s" data-wow-duration=".5s"> Technical</span>
+        <span style="display:inline-block;" class="wow fadeInRight" data-wow-delay="2s" data-wow-duration=".5s">Skills </span>
+      </div>
+    </h2>
+    <!--- - - - - - - -  - - - - - - Dummy --------------------------------------->
+    <div id="Programming-Languages" class="skill__sort skill__sort__left ">
+          <h3 class="skill__sort__title"> Programming Languages </h3>
+          <div class="skill__item">
+            <div class="skill__item__bar">
+              <div id="JavaScript" class="myProgress">
+                 <div class="myBar">10%</div>
+              </div>
+            </div> <!-- End of skill item bar -->
+           <div class="skill__item__text">
+              <p class="skill__item__text__name"> JavaScript</p>
+           </div> <!-- End of  skill item text -->
+         </div> <!-- End of skill Item -->
+         <div class="skill__item">
+           <div class="skill__item__bar">
+             <div id="Cplus" class="myProgress">
+                <div class="myBar">10%</div>
+             </div>
+           </div> <!-- End of skill item bar -->
+          <div class="skill__item__text">
+             <p class="skill__item__text__name"> C++</p>
+          </div> <!-- End of  skill item text -->
+        </div> <!-- End of skill Item -->
+        <div class="skill__item">
+          <div class="skill__item__bar">
+            <div id="Csharp" class="myProgress">
+               <div class="myBar">10%</div>
+            </div>
+          </div> <!-- End of skill item bar -->
+         <div class="skill__item__text">
+            <p class="skill__item__text__name"> C#</p>
+         </div> <!-- End of  skill item text -->
+       </div> <!-- End of skill Item -->
+       <div class="skill__item">
+         <div class="skill__item__bar">
+           <div id="Java" class="myProgress">
+              <div class="myBar">10%</div>
+           </div>
+         </div> <!-- End of skill item bar -->
+        <div class="skill__item__text">
+           <p class="skill__item__text__name"> Java</p>
+        </div> <!-- End of  skill item text -->
+      </div> <!-- End of skill Item -->
+      <div class="skill__sort__left__margin-100"></div>
+      <div class="skill__sort__pointer-after"> </div>
+      <div class="skill__sort__border-after"> </div>
+    </div> <!-- end of skill sort -->
+    <!-- - - - - - - - - -  - - - - - -Dummy ---------------------------------->
+    <!--- - - - - - - -  - - - - - - Dummy --------------------------------------->
+    <div id="Back-End" class="skill__sort skill__sort__right">
+          <div class="skill__sort__right__margin-100"></div>
+          <div class="skill__sort__border-before"> </div>
+          <div class="skill__sort__pointer-before"> </div>
+          <h3 class="skill__sort__title"> Back-End </h3>
+          <div class="skill__item">
+            <div class="skill__item__bar">
+              <div id="PHP" class="myProgress">
+                 <div class="myBar">10%</div>
+              </div>
+            </div> <!-- End of skill item bar -->
+           <div class="skill__item__text">
+              <p class="skill__item__text__name"> PHP</p>
+           </div> <!-- End of  skill item text -->
+         </div> <!-- End of skill Item -->
+         <div class="skill__item">
+           <div class="skill__item__bar">
+             <div id="SQL" class="myProgress">
+                <div class="myBar">10%</div>
+             </div>
+           </div> <!-- End of skill item bar -->
+          <div class="skill__item__text">
+             <p class="skill__item__text__name"> SQL</p>
+          </div> <!-- End of  skill item text -->
+        </div> <!-- End of skill Item -->
+        <div class="skill__item">
+          <div class="skill__item__bar">
+            <div id="Nodejs" class="myProgress">
+               <div class="myBar">10%</div>
+            </div>
+          </div> <!-- End of skill item bar -->
+         <div class="skill__item__text">
+            <p class="skill__item__text__name"> Node.js</p>
+         </div> <!-- End of  skill item text -->
+       </div> <!-- End of skill Item -->
+      <div class="skill__item">
+       <div class="skill__item__bar">
+         <div id="Mongodb" class="myProgress">
+            <div class="myBar">10%</div>
+         </div>
+       </div> <!-- End of skill item bar -->
+      <div class="skill__item__text">
+         <p class="skill__item__text__name"> MongoDB</p>
+      </div> <!-- End of  skill item text -->
+    </div> <!-- End of skill Item -->
+
+    </div> <!-- end of skill sort -->
+    <!-- - - - - - - - - -  - - - - - -Dummy ---------------------------------->
+    <div id="Front-End" class="skill__sort skill__sort__left">
+          <h3 class="skill__sort__title"> Front-End </h3>
+          <div class="skill__item">
+            <div class="skill__item__bar">
+              <div  id="HTML" class="myProgress">
+                 <div class="myBar">10%</div>
+              </div>
+            </div> <!-- End of skill item bar -->
+           <div class="skill__item__text">
+              <p class="skill__item__text__name"> HTML</p>
+           </div> <!-- End of  skill item text -->
+         </div> <!-- End of skill Item -->
+         <div class="skill__item">
+           <div class="skill__item__bar">
+             <div id="CSS" class="myProgress">
+                <div class="myBar">10%</div>
+             </div>
+           </div> <!-- End of skill item bar -->
+          <div class="skill__item__text">
+             <p class="skill__item__text__name"> CSS</p>
+          </div> <!-- End of  skill item text -->
+        </div> <!-- End of skill Item -->
+        <div class="skill__item">
+          <div class="skill__item__bar">
+            <div id="Bootstrap" class="myProgress">
+               <div class="myBar">10%</div>
+            </div>
+          </div> <!-- End of skill item bar -->
+         <div class="skill__item__text">
+            <p class="skill__item__text__name"> Bootstrap</p>
+         </div> <!-- End of  skill item text -->
+       </div> <!-- End of skill Item -->
+       <div class="skill__item">
+         <div class="skill__item__bar">
+           <div id="jQuery" class="myProgress">
+              <div class="myBar">10%</div>
+           </div>
+         </div> <!-- End of skill item bar -->
+        <div class="skill__item__text">
+           <p class="skill__item__text__name"> jQuery</p>
+        </div> <!-- End of  skill item text -->
+      </div> <!-- End of skill Item -->
+      <div class="skill__item">
+        <div class="skill__item__bar">
+          <div id="Sass" class="myProgress">
+             <div class="myBar">10%</div>
+          </div>
+        </div> <!-- End of skill item bar -->
+       <div class="skill__item__text">
+          <p class="skill__item__text__name"> Sass</p>
+       </div> <!-- End of  skill item text -->
+      </div> <!-- End of skill Item -->
+      <div class="skill__item">
+        <div class="skill__item__bar">
+          <div id="Postcss" class="myProgress">
+             <div class="myBar">10%</div>
+          </div>
+        </div> <!-- End of skill item bar -->
+       <div class="skill__item__text">
+          <p class="skill__item__text__name"> Postcss</p>
+       </div> <!-- End of  skill item text -->
+     </div> <!-- End of skill Item -->
+     <div class="skill__item">
+       <div class="skill__item__bar">
+         <div  id="Angularjs" class="myProgress">
+            <div class="myBar">10%</div>
+         </div>
+       </div> <!-- End of skill item bar -->
+      <div class="skill__item__text">
+         <p class="skill__item__text__name"> AngularJs</p>
+      </div> <!-- End of  skill item text -->
+    </div> <!-- End of skill Item -->
+    <div class="skill__item">
+      <div class="skill__item__bar">
+        <div id="React" class="myProgress">
+           <div class="myBar">10%</div>
+        </div>
+      </div> <!-- End of skill item bar -->
+     <div class="skill__item__text">
+        <p class="skill__item__text__name"> React</p>
+     </div> <!-- End of  skill item text -->
+   </div> <!-- End of skill Item -->
+
+      <div class="skill__sort__left__margin-100"></div>
+      <div class="skill__sort__pointer-after"> </div>
+      <div class="skill__sort__border-after"> </div>
+    </div> <!-- end of skill sort -->
+    <!-- - - - - - - - - -  - - - - - -Dummy ---------------------------------->
+    <!--- - - - - - - -  - - - - - - Dummy --------------------------------------->
+    <div id="Others" class="skill__sort skill__sort__right">
+          <div class="skill__sort__right__margin-100"></div>
+          <div class="skill__sort__border-before"> </div>
+          <div class="skill__sort__pointer-before"> </div>
+          <h3 class="skill__sort__title"> Others </h3>
+          <div class="skill__item">
+            <div class="skill__item__bar">
+              <div id="Gulp" class="myProgress">
+                 <div class="myBar">10%</div>
+              </div>
+            </div> <!-- End of skill item bar -->
+           <div class="skill__item__text">
+              <p class="skill__item__text__name"> Gulp</p>
+           </div> <!-- End of  skill item text -->
+         </div> <!-- End of skill Item -->
+         <div class="skill__item">
+           <div class="skill__item__bar">
+             <div id="Typescript" class="myProgress">
+                <div class="myBar">10%</div>
+             </div>
+           </div> <!-- End of skill item bar -->
+          <div class="skill__item__text">
+             <p class="skill__item__text__name"> TypeScript</p>
+          </div> <!-- End of  skill item text -->
+        </div> <!-- End of skill Item -->
+        <div class="skill__item">
+          <div class="skill__item__bar">
+            <div id="Wordpress" class="myProgress">
+               <div class="myBar">10%</div>
+            </div>
+          </div> <!-- End of skill item bar -->
+         <div class="skill__item__text">
+            <p class="skill__item__text__name"> Wordpress</p>
+         </div> <!-- End of  skill item text -->
+        </div> <!-- End of skill Item -->
+        <div class="skill__item">
+          <div class="skill__item__bar">
+            <div id="Express" class="myProgress">
+               <div class="myBar">10%</div>
+            </div>
+          </div> <!-- End of skill item bar -->
+         <div class="skill__item__text">
+            <p class="skill__item__text__name"> Express</p>
+         </div> <!-- End of  skill item text -->
+        </div> <!-- End of skill Item -->
+        <div class="skill__item">
+          <div class="skill__item__bar">
+            <div id="Mocha" class="myProgress">
+               <div class="myBar">10%</div>
+            </div>
+          </div> <!-- End of skill item bar -->
+         <div class="skill__item__text">
+            <p class="skill__item__text__name"> Mocha</p>
+         </div> <!-- End of  skill item text -->
+       </div> <!-- End of skill Item -->
+      <div class="skill__item">
+       <div class="skill__item__bar">
+         <div id="Modernizr" class="myProgress">
+            <div class="myBar">10%</div>
+         </div>
+       </div> <!-- End of skill item bar -->
+        <div class="skill__item__text">
+             <p class="skill__item__text__name"> Modernizr</p>
+        </div> <!-- End of  skill item text -->
+        </div> <!-- End of skill Item -->
+        <div class="skill__item">
+         <div class="skill__item__bar">
+           <div id="Git" class="myProgress">
+              <div class="myBar">10%</div>
+           </div>
+         </div> <!-- End of skill item bar -->
+        <div class="skill__item__text">
+           <p class="skill__item__text__name"> Git</p>
+        </div> <!-- End of  skill item text -->
+      </div> <!-- End of skill Item -->
+      <div class="skill__item">
+       <div class="skill__item__bar">
+         <div id="Photoshop" class="myProgress">
+            <div class="myBar">10%</div>
+         </div>
+       </div> <!-- End of skill item bar -->
+       <div class="skill__item__text">
+         <p class="skill__item__text__name"> Photoshop</p>
+       </div> <!-- End of  skill item text -->
+      </div> <!-- End of skill Item -->
+
+    </div> <!-- end of skill sort -->
+
+
+    <!-- - - - - - - - - -  - - - - - -Dummy ---------------------------------->
+
+</div> <!-- - - - - - - - - - - - - - End of technical skills ----------------->
+<!--- - - - - - - - - - -  - - - - - Portfolio Section ------------------------>
+  <div id="portfolio" class="page-section page-section__portfolio"  data-matching-link="#link-portfolio">
+    <h1 class="page-section__portfolio__title">Portfolio</h2>
+
+    <!--- - - - - -   - - - -  - -  Start of card------------------------------>
+  <!--  <div class="row">
+      <div class="row__6"> -->
+     <div class="container-wrapper">
+        <div class="portfolio ">   <!--Card conatiner-->
+          <div class="portfolio__item" id="resto"> <!--Container Part-->
+            <h1 class="portfolio__title "> Resto </h1>
+            <p class="portfolio__description ">
+              This is one of the most recent projects i've worked on. Resto is a restaurant template that I've built to apply the skills I've learned in how to automate the workflow
+while building the front-end functionality of any website and coding in javascript and/or css. Therefore it
+
+
+            </p>
+            <a href="resto.html" class="btn btn__small"> View More </a>  <!-- believe me -->
+          	<div class="card " id="c0">
+              <a class="" href="https://hesham10000.github.io/Resto/">
+          		    <div class="card__image card__image__resto" id="i0"></div>
+              </a>
+              <div class="card__story" id="s0">
+                <div class="card__story__info">
+                    <h3 class="card__title">Resto</h3>
+                </div>
+              </div>
+              <div class="card__side card__side__right"></div>
+              <div class="card__side card__side__left"></div>
+              <div class="card__side card__side__bottom"></div>
+              <div class="card__side card__side__top"></div>
+              <div class="card__side card__side__back"></div>
+          	</div> <!--- - - - - - - - - - -  - - - - - end of card -------------------->
+          </div> <!-- end of row__6 or container__part portfolio__item -->
+        </div> <!--End of portfolio-->
+      </div> <!--end of container -wrapper-->
+      <div class="container-wrapper">
+         <div class="portfolio ">   <!--Card conatiner-->
+          <div class="portfolio__item" id="fictional-university">
+            <h1 class="portfolio__title"> Fictional University </h1>
+            <p class="portfolio__description">
+              This is one of the longest project I’ve worked on.
+               It’s a fictional university website, a fully functional website where
+                I integrate both back-end and front-end  tools.  I Build this website in parallel while I
+                 was following  a web developer course on udemy.com.
+                 For me this project represents...
+            </p>
+            <a href="university.html" class="btn btn__small"> View More </a>
+            <div class="card " id="c1">
+              <a href="http://heshamm.sgedu.site/">
+                <div class="card__image card__image__fictional-uni" id="i0"> </div>
+              </a>
+          		<div class="card__story" id="s1">
+          			<div class="card__story__info">
+          				<h3 class="card__title">Fictional Uni</h3>
+          			</div>
+          		</div>
+              <div class="card__side card__side__right"></div>
+              <div class="card__side card__side__left"></div>
+              <div class="card__side card__side__bottom"></div>
+              <div class="card__side card__side__top"></div>
+              <div class="card__side card__side__back"></div>
+          	</div> <!--end of card ------------------------------------------------------>
+          </div> <!-- end of row__6 or container__part or Portfolio__item -->
+        </div> <!-- end of container or portfolio -->
+    </div> <!--end of container-wrapper -->
+    <div class="container-wrapper">
+       <div class="portfolio ">   <!--Card conatiner-->
+         <div class="portfolio__item" id="pig-game"> <!--Container Part-->
+           <h1 class="portfolio__title "> Pig Game </h1>
+           <p class="portfolio__description ">
+             This is my first complete project in javascript.
+             Again  I was following a course on Udemy and this is the one that really
+             helps me a lot to build solid understanding in javascript. Of course I’ve written small projects in
+              javascript before this one. But in this course I came to understand the advanced topics in
+               javascript and how it all works .
+           </p>
+           <div class="card " id="c0">
+             <a href="https://hesham10000.github.io/Pig-game/">
+               <div class="card__image card__image__game" id="i0"> </div>
+             </a>
+             <div class="card__story" id="s0">
+               <div class="card__story__info">
+                   <h3 class="card__title">Pig Game</h3>
+               </div>
+             </div>
+             <div class="card__side card__side__right"></div>
+             <div class="card__side card__side__left"></div>
+             <div class="card__side card__side__bottom"></div>
+             <div class="card__side card__side__top"></div>
+             <div class="card__side card__side__back"></div>
+           </div> <!--- - - - - - - - - - -  - - - - - end of card -------------------->
+         </div> <!-- end of row__6 or container__part portfolio__item -->
+       </div> <!--End of portfolio-->
+     </div> <!--end of container -wrapper-->
+     <div class="container-wrapper">
+        <div class="portfolio ">   <!--Card conatiner-->
+         <div class="portfolio__item" id="travelco">
+           <h1 class="portfolio__title"> Travelco </h1>
+           <p class="portfolio__description">
+             Another  project I’ve worked on while following another course for Brad Schiff.
+              This man has really left a strong impact on me as a person and as a developer and I guess I will
+              be the first one who will register for his upcoming courses  and I’ll keep following his courses
+               even after million years.
+           </p>
+           <div class="card " id="c1">
+             <div class="card__image" id="i1">
+               <a href="https://hesham10000.github.io/travel-site/">
+                 <div class="card__image card__image__travel" id="i0"> </div>
+               </a>
+             </div>
+             <div class="card__story" id="s1">
+               <div class="card__story__info">
+                 <h3 class="card__title">Travelco</h3>
+               </div>
+             </div>
+             <div class="card__side card__side__right"></div>
+             <div class="card__side card__side__left"></div>
+             <div class="card__side card__side__bottom"></div>
+             <div class="card__side card__side__top"></div>
+             <div class="card__side card__side__back"></div>
+           </div> <!--end of card ------------------------------------------------------>
+         </div> <!-- end of row__6 or container__part or Portfolio__item -->
+       </div> <!-- end of container or portfolio -->
+   </div> <!--end of container-wrapper -->
+
+
+</div>  <!-- End of portfolio section -->
+<!-- - - - - - - - - - - - -  -  - - - - - Footer ----------------------------->
+  <footer class="footer">
+    <p>Copyright &copy; 2018 Hesham Moharam. All rights reserved. </p>
+  </footer>
+  <!-- build:js assets/scripts/App.js -->
+  <script src="temp/scripts/App.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

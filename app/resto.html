@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <title>Rest </title>
+  <meta name="keywords" content="My Portfolio, Web developer, Wed Designer, responsive design">
+  <meta name="description" content="Your Web developer, I create Products and companies.">
+  <script src="temp/scripts/Vendor.js"></script>
+</head>
+<body>
+  <!--- - - - - - - - - - - -Header -------------------------------------------->
+
+  <header>
+    <div class="top-nav" id="top-nav_1">
+        <a href="/"> <div class="top-nav__logo">  </div>  </a>
+        <a  href="index.html" class="top-nav__link" id="link-home"> Home  </a>
+      <!--  <a class="top-nav__link top-nav__hidden"> Hide </a> -->
+        <div class="top-nav__icon">
+          <div class="top-nav__icon__middle"> </div>
+        </div>
+    </div> <!-- End of nav -->
+  </header>
+
+<!--------------------------------Lead Banner -------------------------------------------->
+  <div  class="large-hero page-section page-section__home"  id="home" data-matching-link="#link-home">
+    <div id="particle-js" class="large-hero__particles" >
+    </div>
+    <picture>
+      <source srcset="assets/images/hero--large-1.png 1920w" media="(min-width: 1380px)">
+      <source srcset="assets/images/hero--medium-1.png 1380w" media="(min-width: 990px)">
+      <source srcset="assets/images/hero--small-1.png 990w"  media="(min-width: 640px)">
+      <img srcset="assets/images/hero--smaller-1.png 640w" alt="Hesham Moharam Portfolio" class="large-hero__image">
+    </picture>
+    <div  class="large-hero__text-content">
+      <h1 class="wow bounce  large-hero__title">
+        <span class="moving-border">
+            <span class="moving-border__after"></span>
+             Welcome
+            <span class="moving-border__before"></span>
+        </span>
+      </h1>
+
+    </div>
+    <span class="scroll-up"> &#171; </span>
+
+  </div>
+<!--------------------------------About Me Section -------------------------------------------->
+
+<!--- - - - - - - - - - -  - - - - - Portfolio Section ------------------------>
+  <div id="portfolio" class="page-section page-section__portfolio page resto"  data-matching-link="#link-portfolio">
+    <h1 class="page-section__portfolio__title">Resto</h2>
+
+    <!--- - - - - -   - - - -  - -  Start of card------------------------------>
+  <!--  <div class="row">
+      <div class="row__6"> -->
+     <div class="container-wrapper">
+        <div class="portfolio ">   <!--Card conatiner-->
+          <div class="portfolio__item" id="resto"> <!--Container Part-->
+            <h1 class="portfolio__title "> Resto </h1>
+            <p class="portfolio__description ">
+              This is one of the most recent projects i've worked on. Resto is a restaurant template that I've built to apply the skills I've learned in how to automate the workflow
+              while building the front-end functionality of any website and coding in javascript and/or css. Therefore it represents a turning point in the way I approach the front-end in general. Before,
+              I used to use Bootstrap and utilize the already built-in components and utilities that Bootstrap, Semantic UI or any other modern  css Frameworks provides. But then, I came to hear about
+              Gulp, and I do remember at that moment how the word sounded so wierd to me not because  I didn't know what Gulp as a word means! but mainly because at some moment in my career,
+              (and honestly speaking it's a very short career :)) I thought you can do anything with html javascript and css alone. Of course you can do everything but
+               wouldn't it be awesome if we can use "Classes" in our javascript code or divide our code in many files and then include them in one file?. How about using functions and variables in css?! Wouldn’t
+              it be awesome if you can use a tool that convert all of your css to a compatible cross-browser css. Instead of writing :
+                    <br>  transform:scale(1,1);
+                    <br>  -ms-transform:scale(1,1);
+                    <br>  -moz-transform:scale(1,1);
+                    <br>  -webkit-transform:scale(1,1);
+                    <br>  -o-transform:scale(1,1);
+            <br>you focus only on your code and let the tool do its job?.
+            Thanks to gulp we can  achieve all of that and much more. Of course we
+            are still writing js and css, but in much more efficient way, that makes our
+             life much easier and makes our code more maintainable and debuggable .
+             Well, with that is said, let’s go back to the moment when I first heard about gulp, as
+            I said the word sounded weird to me but has awaken my curiosity and after I watched the first 5 mins
+            on a YouTube  video in which a decent guy  was explaining what is gulp and what it is used for, I decided to
+            take my skills to the next step embark on a new journey. Then I built this website in which I applied all the
+            techniques I’ve learned
+
+            </p>
+          	<div class="card " id="">
+              <a class="" href="https://hesham10000.github.io/Resto/">
+          		    <div class="card__image card__image__resto" id="i0"></div>
+              </a>
+              <div class="card__story" id="">
+                <div class="card__story__info">
+                    <h3 class="card__title">Resto</h3>
+                </div>
+              </div>
+              <div class="card__side card__side__right"></div>
+              <div class="card__side card__side__left"></div>
+              <div class="card__side card__side__bottom"></div>
+              <div class="card__side card__side__top"></div>
+              <div class="card__side card__side__back"></div>
+          	</div> <!--- - - - - - - - - - -  - - - - - end of card -------------------->
+          </div> <!-- end of row__6 or container__part portfolio__item -->
+        </div> <!--End of portfolio-->
+      </div> <!--end of container -wrapper-->
+</div>  <!-- End of portfolio section -->
+<!-- - - - - - - - - - - - -  -  - - - - - Footer ----------------------------->
+  <footer class="footer">
+    <p>Copyright &copy; 2018 Hesham Moharam. All rights reserved. </p>
+  </footer>
+
+   <script src="/temp/scripts/App.js"></script>
+</body>
+</html>

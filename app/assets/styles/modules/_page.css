@@ -1,0 +1,137 @@
+.page{
+    &.resto{
+
+     &> .container-wrapper{
+      height: 2500px ;
+      @mixin atSmall{
+        height: 2200px ;
+      }
+      @mixin atMedium{
+        height: 1900px ;
+      }
+      @mixin atLarge{
+        height: 1600px ;
+      }                     /*End of mixin for container-wrapper*/
+      &> .portfolio{
+        height: 2500px ;
+        @mixin atSmall{          /* repeat again */
+          height: 2200px ;
+        }
+        @mixin atMedium{
+          height: 1900px ;
+        }
+        @mixin atLarge{
+          height: 1600px ;
+        }       /*mixin end for portfolio*/
+
+        &> .portfolio__item{
+          height: 2500px ;
+          overflow: hidden;
+          @mixin atSmall{
+            height: 2200px ;
+          }
+          @mixin atMedium{
+            height: 1900px ;
+          }
+          @mixin atLarge{
+            height: 1600px ;
+          }  /*mixin end for portfolio item*/
+          & .card{
+            height: 0px;
+            width: 0px;
+            transform: rotateX(15deg) scale(.8);
+            @mixin atSmall{
+              height: 500px;
+              width: 450px;
+            }
+            @mixin atMedium{
+              height: 500px;
+              width: 400px;
+            }
+
+            &__story{
+              height:50px;
+            }
+          }/*End of card*/
+        }/*End of portfolio item*/
+      }/*End of portfolio*/
+    }/*End of container wrapper*/
+
+  }/*End of resto*/
+  &.university{
+
+     &> .container-wrapper{
+      height: 2200px ;
+      @mixin atSmall{
+        height: 1800px ;
+      }
+      @mixin atMedium{
+        height: 1400px ;
+      }
+      @mixin atLarge{
+        height: 1300px ;
+      }                     /*End of mixin for container-wrapper*/
+      &> .portfolio{
+        height: 2200px ;
+        @mixin atSmall{          /* repeat again */
+          height: 1800px ;
+        }
+        @mixin atMedium{
+          height: 1400px ;
+        }
+        @mixin atLarge{
+          height: 1300px ;
+        }       /*mixin end for portfolio*/
+
+        &> .portfolio__item{
+          height: 2200px ;
+          overflow: hidden;
+          @mixin atSmall{
+            height: 1800px ;
+          }
+          @mixin atMedium{
+            height: 1400px ;
+          }
+          @mixin atLarge{
+            height: 1300px ;
+          }  /*mixin end for portfolio item*/
+          & .card{
+            height: 0px;
+            width: 0px;
+            @mixin atSmall{
+              height: 500px;
+              width: 450px;
+            }
+            @mixin atMedium{
+              height: 500px;
+              width: 400px;
+            }
+
+            &__story{
+              height:50px;
+            }
+          }/*End of card*/
+        }/*End of portfolio item*/
+      }/*End of portfolio*/
+    }/*End of container wrapper*/
+  }
+
+  &.about{
+    border-color: transparent;
+    &> .about-me__text-content{
+
+      height:auto;
+      &> .about-me__description{
+        position: static;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%,0%);
+
+        &:before{
+          display:none;
+        }
+      }/*End of description*/
+    }/*End of content*/
+
+  }
+}/*End of page*/

@@ -1,0 +1,77 @@
+.fly-word{
+  margin-bottom: 0;
+  & > span{
+    margin: 0 -3px;
+    opacity: 0;
+    transition: all 1s ease-out;
+    &:nth-child(1){
+      transform: translate(-100px,-200px) rotate(30deg);
+      position: absolute;
+    }
+    &:nth-child(2){
+      transform: translate(-80px,-230px) rotate(-30deg);
+      position: absolute;
+    }
+    &:nth-child(3){
+      transform: translate(100px,180px) rotate(50deg);
+      position: absolute;
+    }
+    &:nth-child(4){
+      transform: translate(-90px,-150px) rotate(0deg);
+      position: absolute;
+    }
+    &:nth-child(5){
+      transform: translate(300px,-100px) rotate(-68deg);
+      position: absolute;
+    }
+    &:nth-child(8){
+      transform: translate(-200px,200px) rotate(75deg);
+      position: absolute;
+    }
+    &:nth-child(7){
+      transform: translate(500px,-150px) rotate(-60deg);
+      position: absolute;
+    }
+  }
+  &__restore{
+
+    & > span{
+      opacity: 1;
+     &:nth-child(1){
+
+          transform: translate(-75px,0px) rotate(0deg);
+
+      }
+      &:nth-child(2){
+
+          transform: translate(-50px,-0px) rotate(0deg);
+
+      }
+      &:nth-child(3){
+
+          transform: translate(-28px,0px) rotate(0deg);
+      }
+      &:nth-child(4){
+
+          transform: translate(-5px,0px) rotate(0deg);
+      }
+      &:nth-child(5){
+
+          transform: translate(19px,0px) rotate(0deg);
+      }
+      &:nth-child(6){
+
+          transform: translate(50px,0px) rotate(0deg);
+      }
+      &:nth-child(7){
+
+          transform: translate(50px,0px) rotate(0deg);
+      }
+      &:nth-child(8){
+
+          transform: translate(83px,0px) rotate(0deg);
+      }
+    }/**end of span*/
+  }/*End of rstore*/
+
+}/*End of fly word*/

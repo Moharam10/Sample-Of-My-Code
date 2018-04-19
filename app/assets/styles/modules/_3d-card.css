@@ -1,0 +1,327 @@
+
+
+.portfolio{  /*Card container*/
+    position: absolute;
+    top: 1%;
+    width: 100%;
+    height: 900px;
+    perspective: 900px;
+    background: #ccc;
+    border: .5px solid grey;
+    @mixin atSmall{
+      height: 800px;
+    }
+    @mixin atMedium{
+      height: 600px;
+    }
+    @mixin clearfix;
+    &__item{ /*Container part*/
+      width: 100%;
+      background: white;
+      border: 1px solid grey;
+      position: relative;
+      height: 900px;
+      float: left;
+      padding: 0;
+      margin: 0;
+      box-shadow: 0px 3px 30px grey inset;
+      @mixin atSmall{
+        height: 800px;
+      }
+      @mixin atMedium{
+        height: 600px;
+      }
+    }/*End of portfolio item*/
+    &__title{
+        color: $secondryBlue;
+        margin-bottom:  1.5rem;
+        padding: 1rem 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+        float: left;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 3px solid $secondryBlue;
+        @mixin atSmall{
+          font-size: 2.5rem;
+        }
+        @mixin atMedium{
+          width: 50%;
+        }
+        &__right{
+          float: right;
+        }
+    }/*portfolio title*/
+    &__description{
+      width: 100%;
+      color: black;
+      font-size: 1.1rem;
+      font-weight: 300;
+      text-shadow: 2px 2px 0 rgba(58, 150, 217, .1);
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      line-height: 2.3rem;
+      padding: 1rem 20px;
+      margin: 0;
+      @mixin atMedium{
+        width:50%;
+      }
+      &__right{
+        float: right;
+      }
+    }/*end of portfolio description*/
+}/*End of portfolio*/
+
+.container-wrapper{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 900px;  /*sma e as portfolio */
+  width: 100%;
+  padding: 0;
+  @mixin atSmall{
+    height: 800px;
+  }
+  @mixin atMedium{
+    height: 600px;
+  }
+}
+.card {
+  position: absolute;
+  bottom: 0%;
+  left: 7.5%;
+  width: 85%;
+  height: 40%;
+  transition: .5s all ease;
+  transform: rotateX(30deg) scale(0.8);
+  perspective: 900px;
+  transform-style: preserve-3d;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+  z-index: 1;
+  box-shadow: 0px 20px 100px #555;
+  background: white;
+  border: 1px solid grey;
+  @mixin atSmall{
+    bottom: 8%;
+    left: 7.5%;
+    width: 85%;
+    height: 45%;
+  }
+  @mixin atMedium{
+    top: 0%;
+    left: 55%;
+    width: 40%;
+    height: 80%;
+  }
+  &__side{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+
+    background: $secondryBlue;
+    &__bottom{
+      bottom: -25px;  /*cause height is 50px*/
+      transform: rotateX(90deg) translateY(-50%);
+    }
+    &__top{
+      top: -25px;  /*cause height is 50px*/
+      transform: rotateX(90deg) translateY(-50%);
+    }
+    &__right{
+      height: 100%;
+      width: 50px;
+      right: -25px;  /*cause height is 50px*/
+      transform: rotateY(-90deg) translateX(-50%);
+    }
+    &__left{
+      height: 100%;
+      width: 50px;
+      left: -25px;  /*cause height is 50px*/
+      transform: rotateY(-90deg) translateX(-50%);
+    }
+    &__back{
+      height: 100%;
+      width: 100%;
+      transform:  translateZ(-25px);
+    }
+
+  }
+  &:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1) translateY(10px);
+    transition: .5s all ease;
+    z-index: 10;
+  }/*End of hover*/
+  &__image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 45%;
+    /*background: linear-gradient(to top, #eba65b 30%, #d99267 100%);*/
+    margin-left: auto!important;
+    margin-right: auto!important;
+    transition: background-position 1.5s ease-out 0.5s;
+    background-position: top center;
+    background-size: 100% auto!important;
+    height: 100%;
+    background-repeat: no-repeat;
+    &__resto{
+          background: url(../../assets/images/Resto.png) ;
+          &:hover{
+            background-position: bottom center!important;
+            transition: background-position 5s linear 0s;
+          }
+    }
+    &__fictional-uni{
+        background: url(../../assets/images/fictional-uni.png) ;
+        &:hover{
+          background-position: bottom center!important;
+          transition: background-position .3s linear 0s;
+        }
+    }
+    &__game{
+      background: url(../../assets/images/game.png)  ;
+      background-size: 100% 50%!important;
+      &:hover{
+        background-position: bottom center!important;
+        transition: background-position .3s linear 0s;
+      }
+    }
+    &__travel{
+      background: url(../../assets/images/travel.png) ;
+      &:hover{
+        background-position: bottom center!important;
+        transition: background-position 2s linear 0s;
+      }
+    }
+  }/*End of card image*/
+  &__title {
+    text-align: center;
+    text-shadow: 0px 0px 10px #eee;
+    color: #eee;
+    letter-spacing: 2px;
+
+  }/*End of card title*/
+  &__description {
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 20px 20px 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 1px;
+
+  }/*End of card description*/
+  &__pagination {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    left: 0%;
+    height: 20%;
+    z-index: 30;
+    li {
+      position: absolute;
+      top: 50%;
+      list-style: none;
+      color: #111;
+      &:nth-child(1) {
+        left: 15%;
+        animation: simple1 1s linear infinite;
+      }
+
+      &:nth-child(2) {
+        right: 15%;
+        animation: simple 1s linear infinite;
+      }
+    } /*End of list*/
+    &__title {
+      color: #111;
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      letter-spacing: 2px;
+    }/*end of pagination title*/
+  }/*End of card pagination*/
+  &__story {
+    position: absolute;
+    display: none;
+    top: 104%;
+    left: 0%;
+    height: 15%;
+    width: 100%;
+  /*  background: linear-gradient(to bottom, #eba65b 0%, #d99267 40%);*/
+    transform: rotateX(-37deg);
+    background: $secondryBlue;
+    z-index: 30;
+    @mixin atMedium{
+      display: block;
+    }
+
+    &__info {
+      position: absolute;
+      top: 10%;
+      left:50%;
+      transform: translateX(-50%);
+    } /*end of info*/
+  }/*end of card story*/
+
+}/*End of card*/
+/*-------------------------------Cards IDs----------------------------------------*/
+#c0 { /*Card0*/
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+
+}
+#c1 { /*Card1*/
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+
+}
+#c2 { /*Card2*/
+
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+/*------------------------------Images IDs------------------------------------*/
+#i1 { /*image1*/
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+#i2 {/*image2*/
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+/*------------------------------Story IDs-------------------------------------*/
+
+/*------------------------------Animation-------------------------------------*/
+@keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}

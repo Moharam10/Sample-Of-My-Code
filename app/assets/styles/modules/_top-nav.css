@@ -1,0 +1,250 @@
+
+$nav_color : rgba($darkBlue, 0);
+$nav_font_color: white;
+
+
+
+.top-nav{
+  width:100%;
+  background: $nav_color;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  @mixin clearfix;
+
+/* End of logo */
+  /*-------------------------------------Start of dropdown--------------------*/
+  .dropdown{
+    display: none;    /* we displayed it as block after we click the icon*/
+    position: static;
+    border: none;
+    padding: 0;
+    width: 100%;        /*  Give it to have the menu correctly align with other top-nav__link */
+    &__icon{
+
+      margin-right: -20px;
+      opacity: 1;
+    }
+    &__item{
+      display: block;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      padding: 0.1rem 1rem;
+      border-top: 1px solid white !important;
+      border-bottom: transparent !important;
+      border-radius: 50%;
+      background: rgba($darkBlue,.5);
+      &:hover{
+        border-bottom: 1px white solid;
+        width: auto;
+        color: white;
+        padding-bottom: 0.5rem;
+      }
+    }
+    &__content {
+      position: static;
+      display: none;
+      background: transparent !important;
+      overflow: hidden !important;
+      border-radius:  50%;
+
+      @mixin atLarge{
+        position: absolute;   /*  this make the dropdown when it opens, openoutside the nav bar */
+        z-index: 10;
+
+      }
+    } /* end of drop down content*/
+
+    /*-----------------------*/
+    &__toggle{
+      padding: .8rem 2rem;
+      position: relative;
+      cursor: default;
+      background: $nav_color;
+      color: $nav_font_color;
+      border-radius: 50%;
+      &:hover{
+        cursor: pointer;
+        .dropdown__icon{      /* this using of selector is very important as I have forgooten it */
+
+        }
+      }   /*  End of hover */
+    } /* End of toggle*/
+    /*------------------------*/
+    @mixin atLarge{ /* this options depend on the size of the links*/
+     display:inline-block;
+      width: auto;
+      position: relative;
+      z-index: 10;
+    }
+
+  } /* End of dropdown*/
+/* ------------------------------------------End of Dropdown------------------------------------------ */
+  &__icon {
+                /* apply the same rules as for nav__link */
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: inline-block;
+    padding: 0.7rem 2.5rem; /*  these setting are very important to macth with other elements*/ /* but we decrease the padding */
+    background: $nav_color; /*    we get it by trial and error */
+    color: $nav_font_color;
+    text-align: center;
+    font-size: 0.7rem;    /*  these setting are very important to macth with other elements*/
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    @mixin atLarge{   /* mixin for the icon == the same for all the other mixin*/
+      display: none;
+    }
+
+
+    &:hover{
+    /*  transform:scaleX(1.3); */
+
+
+    }
+    &::before{
+      content:"";
+      display: block;
+      color: $nav_color;
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 20px;
+
+      transition: 0.4s;
+    }
+    &__middle{
+
+      color: $nav_color;
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 20px;
+      transform-origin: center;
+
+      transition: 0.4s;
+
+    } /* End of middle bar */
+
+    &::after{
+      content:"";
+      display: block;
+      color: $nav_color;
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 20px;
+
+      transition: 0.4s;
+    }
+    /* ------------------------Give the icon active class---------------------*/
+    &__active{
+
+        .top-nav__icon__middle{
+          visibility:hidden;
+          opacity: 0;
+        }
+        &::after{
+          transform: rotate(-45deg) translateY(-15px) ;
+
+        }
+        &::before{
+          transform: rotate(45deg) translateY(15px);
+
+        }
+
+    }/* End of icon__active*/
+
+
+  } /* -----------------------------End of icon ------------------------------*/
+
+  /*--------------------------------Menu Links ------------------------------*/
+  &__link{
+
+
+    display: none;      /* we displayed it as block after we click he icon*/
+    width: auto;;
+    padding: .8rem 1rem; /*  these setting are very important to macth with other elements*/
+    background: rgba($darkBlue,.8);
+    margin-top: 10px;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+    color: $nav_font_color;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;    /*  these setting are very important to macth with other elements*/
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 1%;
+    &::first{           /*Logo */
+      display:inline-block;
+    }
+    &__active{
+      background: $nav_font_color;
+      color: $nav_color;
+    }
+
+    &:hover{
+      border-bottom: 1px white solid;
+      width: auto;
+      color: white;
+      padding-bottom: .5rem;
+      .dropdown__toggle{
+        padding-bottom: 0rem;
+        background: transparent;
+      }
+    }
+    @mixin atLarge{     /* for small screen*/
+      float: right;
+      display: inline-block;
+      width: auto;
+    }
+  } /* ----------End of Link ------------------------------------------ */
+  &__logo{
+                  /*these to make the logo exactly like the links*/
+    padding: 1.8rem 1.5rem; /*  these setting are very important to macth with other elements*/
+    color: $nav_font_color;
+    font-size: 1rem;    /*  these setting are very important to macth with other elements*/
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    text-indent: -1000px;
+    position: relative;
+    border: none;
+    float: none;
+    @mixin atSmall{
+    width: 100px;
+    }
+    @mixin atLarge{
+      float: left;
+    }
+  }
+  /* --------------when the icon is cliecked--------------------------------*/
+&__icon__clicked{
+    .top-nav__link {
+      display: block;
+    }
+
+    .top-nav__logo{
+
+      border: none;
+      transition: all 1s ease-out;
+
+    } /* End of nav__logo*/
+  } /* End of icon__clicked*/
+  &__hidden{
+    width: 300px;
+  }
+  &__change-item{
+    background: yellow;
+  }
+
+} /* End of nav*/
+.change-item{
+    background: transparent !important;
+}

@@ -1,0 +1,23 @@
+.social{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 25px;
+  color: white;
+  white-space: nowrap;
+  @mixin atMedium{
+    bottom: 25%;
+  }
+}
+.fa{
+  margin: 0 5px;
+  padding: 0;
+  transition: all 0.25s ease-out;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+      padding:  0 7px;
+  }
+}

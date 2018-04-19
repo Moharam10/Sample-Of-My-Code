@@ -1,0 +1,18 @@
+$stickyColor : $darkBlue;
+.reveal-item{
+  transition: all .5s ease-out;
+  opacity: 0;
+  transform: scale(0.3);
+}
+.reveal-item--is-visible{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.site-header--dark{
+  background: rgba($darkBlue,.65) !important;
+
+}
+.is-current-link{
+  color: gold  !important ;
+}

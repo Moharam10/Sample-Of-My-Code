@@ -1,0 +1,13 @@
+.myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.myBar {
+  width: 10%;
+  height: 16px;
+  background-color: #3a96d9;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+}

@@ -1,0 +1,92 @@
+$nav_color : rgba(#a87a5d, 0.4);
+$nav_font_color: white;
+
+$dropdown_color : $nav_color ;
+$dropdown_font_color: white ;
+$border_color: #ddd;
+$content_color: $nav_color;
+$content_font_color : black;
+
+.dropdown{
+  display: inline-block;
+  width:250px;
+  height: auto;
+  border-left: 1px solid $border_color;
+  border-right: 1px solid $border_color;
+  text-align: center;
+  position: relative;
+  &:hover{
+    cursor: pointer;
+    /* opacity: 0.8; */
+  }
+
+  &__toggle{
+    color: $dropdown_font_color;
+    background: $dropdown_color;
+    padding: 1.5rem 3.5rem;     /* ------- Normally we set it to 1.5rem 2.5rem*/
+    position: relative;
+    transition: all 0.3s ease-out;
+    &:hover{
+      background: $dropdown_font_color;
+      color: $dropdown_color;
+      cursor: pointer;
+
+      .dropdown__icon{      /* this using of selector is very important as I have forgooten it */
+
+        color: $dropdown_color;
+      }
+    } /* End of hover */
+  } /* End of toggle */
+
+    &__icon{
+      position: absolute;
+      display: inline-block;
+      right: 28px;
+      padding-left:  0px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $dropdown_font_color;
+      transform: scale(1);
+      margin-top: -10px;
+      transition: all 0.3 ease-out ;
+      &:hover{
+        transform: scale(1.3);
+        /* animation: rotate .5s ease-out , r_rotate .5s  ease-out .5s  ; */
+
+      }
+      &::before{
+        display:inline-block;
+        padding-right:  10px;
+        cursor: pointer;
+      }
+    }
+
+    &__content{
+
+      height: auto;
+      width: 100%;
+      display: none;
+      background: $content_color;
+      color: $content_font_color;
+      z-index: 10;
+      position: absolute;
+    }
+    &__item{
+      display: block;
+      padding : 1rem;
+      border-bottom: 1px solid $border_color;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      &:hover{
+        background:$dropdown_color;
+        color: $dropdown_font_color
+
+      }
+
+    }
+
+
+
+
+}

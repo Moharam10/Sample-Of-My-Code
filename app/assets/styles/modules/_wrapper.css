@@ -1,0 +1,31 @@
+.wrapper{
+  padding: 0 ;
+  &__normal{
+    max-width: 1000px;
+    margin: 0 auto;
+    &__x-padding{
+      padding: 0 1rem
+    }
+  }
+  &__large{
+    max-width: 1250px;
+    margin: 0 auto;
+    &__x-padding{
+      padding: 0 1rem
+    }
+  }
+  &__100{
+    max-width: 100%;
+    margin: 0 auto;
+    &__x-padding{
+      padding: 0 1rem
+    }
+  }
+  &__90{
+    max-width: 90%;
+    margin: 0 auto;
+    &__x-padding{
+      padding: 0 1rem
+    }
+  }
+}

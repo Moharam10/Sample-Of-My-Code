@@ -1,0 +1,20 @@
+/*animate Liberary:*/
+/* --------------------
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<h1 class="animated infinite bounce">Example</h1>
+
+*/
+
+
+
+/* Wow Liberary*/
+/* --------------
+
+new WOW().init();
+<section class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"></section>
+<section class="wow slideInRight" data-wow-offset="10"  data-wow-iteration="10"></section>
+
+
+
+
+*/
